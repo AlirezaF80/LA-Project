@@ -2,6 +2,10 @@ Linear Algebra Project
 ======================
 This is a project for the course "Linear Algebra" at the University Khaje Nasir Toosi of Technology, Semester 4011.
 
+
+Project Description
+-------------------
+
 In this project, we practiced concepts of linear algebra, such as:
 
 - Principal Component Analysis (PCA)
@@ -22,6 +26,8 @@ I Implemented the following tasks:
 - Logistic Regression
 - Logistic Regression using Tensorflow
 - Principal Component Analysis (PCA)
+
+The full description of the project is available in the file "LA4011-final-project-v3.pdf".
 
 Requirements
 ------------

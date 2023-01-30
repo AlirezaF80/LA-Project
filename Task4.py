@@ -1,5 +1,4 @@
 import numpy as np
-from matplotlib import pyplot as plt
 
 from Task1 import train, Phi, C
 from utilFunctions import plot_data_2D
@@ -34,6 +33,6 @@ if __name__ == '__main__':
 
     # train the model
     w, b = train(X_reduced, y, w, b, learning_rate=0.1, threshold=0.012, num_iterations=200)
-    print("Final cost: %f" % C(X_reduced, y, w, b))
-    print("Final parameters: w = %s, b = %s" % (w, b))
+    print(f"Final cost: {C(X_reduced, y, w, b)}")
+    print(f"Final parameters: w = {w}, b = {b}")
     plot_data_2D(X_reduced, y, Phi(X_reduced, w, b), w, b, False)
