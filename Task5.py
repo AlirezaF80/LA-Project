@@ -8,7 +8,6 @@ def LDA(X, k):
     :param k: number of components to keep
     :return: reduced data matrix (N, k)
     """
-    # TODO: implement LDA
     # 1. Compute the mean vector of each class
     # 2. Compute the within-class scatter matrix Sw
     # 3. Compute the between-class scatter matrix Sb
@@ -23,6 +22,7 @@ def LDA(X, k):
         Sw += np.dot((X[i] - means).T, (X[i] - means))
     for i in range(X.shape[0]):
         Sb += X.shape[0] * np.dot((means - X[i]).T, (means - X[i]))
+    Sw += 0.01 * np.eye(Sw.shape[0])
     eig_vals, eig_vecs = np.linalg.eig(np.dot(np.linalg.inv(Sw), Sb))
     eig_pairs = [(np.abs(eig_vals[i]), eig_vecs[:, i]) for i in range(len(eig_vals))]
     eig_pairs.sort(key=lambda x: x[0], reverse=True)
