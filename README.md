@@ -21,12 +21,6 @@ The project compromises of five parts:
 - Principal Component Analysis (PCA)
 - Bonus: Linear Discriminant Analysis (LDA)
 
-I Implemented the following tasks:
-
-- Logistic Regression
-- Logistic Regression using Tensorflow
-- Principal Component Analysis (PCA)
-
 The full description of the project is available in the file "LA4011-final-project-v3.pdf".
 
 Requirements
